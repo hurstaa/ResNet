@@ -1,2 +1,2 @@
 # DamNet
-This repository contains the Jupyter Notebooks and input files necessary to recreate the DamNet database of routed US dams.
+This repository contains the Jupyter Notebooks and input files necessary to recreate the DamNet database of routed US dams. The user needs to download the most recent versions of all of the databases, as well as the input files and most recent version of DamNet from Zenodo (DOI: 10.5281/zenodo.14057031). First run 01DamNet_FilteringandSnapping followed by 02DamNet_DamOrdering. The output will be a csv with an updated version of DamNet. If you would like any updated dam locations permanently added to future versions of the dataset, please email damnet@usbr.gov.
