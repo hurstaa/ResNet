@@ -9,8 +9,8 @@ Why NHDPlusv2? Future versions use something else if better becomes available.
 Link to published paper:
 
 Instructions:
-1. Download yaml
-2. Download local version of github repo and all files. To work with code as written need to have input files in same folder as script. Can download versions here on github or else from Zenodo (link)
+1. Download yaml (https://www.anaconda.com/docs/tools/working-with-conda/environments#example-version-matching-inputs); map environment to jupyter notebooks. Need ArcGIS Pro installation on your computer.
+2. Download local version of github repo and all files. To work with code as written need to have input files in same folder as script. Automatically downloads to same folder from github. Need to unzip the flowline geodatabase. Can download versions here on github or else from Zenodo (link)
 3. Run 01DamNet_FilteringandSnapping. Should output files to 02DamNet_DamOrdering folder
 4. Once finished, run 02DamNet_DamOrdering. Output file is final updated DamNet
 
