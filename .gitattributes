@@ -1,3 +1,0 @@
-NHDFlowline_Network_NHDPlus_Countries.gdb.zip filter=lfs diff=lfs merge=lfs -text
-NHDFlowline_Network_NHDPlus_Countries.gdb.csv filter=lfs diff=lfs merge=lfs -text
-NHDFlowline_Network_NHDPlus_Countries.csv filter=lfs diff=lfs merge=lfs -text
