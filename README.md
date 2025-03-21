@@ -27,12 +27,15 @@ To permanently add a dam to ResNet or update its attributes, email ResNet@usbr.g
 
 ## How to run the code:
 1. Download ArcGIS Pro. You will need an ArcGIS Pro installation on your computer to run this code.
-2. Download the .yml file with the environment that already has packages needed to run this code (https://www.anaconda.com/docs/tools/working-with-conda/environments#example-version-matching-inputs).
-3. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt for example: python -m ipykernel install --user --name=your_env_name --display-name "Python (your_env_name)". Replace your_env_name with the name of the environment you create for the .yml file. This assumes you have jupyter notebooks installed. Run jupyter notebook through the prompt and change the kernel to the new environment once you open the script.
-4. Download a local version of this GitHub repository and all files. To work with code as written, you need to have the input files in same folder as script with the same sub-folders. If you download from GitHub, you will automatically download all of the needed input files EXCEPT for the flowlines. You will need to download those from Zenodo (link) and unzip within the Inputs folder. You can download the versions of datasets here on github or else from Zenodo (link). If you want more updated versions than those used to create version 1 of ResNet, you will need to download directly from the source.
-5. Run 01ResNet_FilteringandSnapping. This automates the data filtering, dataset combining, and flowline snapping algorithms using pandas and ArcGIS Pro.
-6. Run 02ResNet_DamOrdering. Output file is final updated ResNet routed. Appears in the Outputs folder as ResNet_{today's date}.csv.
-7. Run 03 !!!!!!!!!!!!!!!!!!!!!!!!!!
+2. Download the environment.yml file with the environment that already has packages needed to run this code (https://www.anaconda.com/docs/tools/working-with-conda/environments#example-version-matching-inputs).
+3. Create a new environment with the .yml file:
+   ![image](https://github.com/user-attachments/assets/8a96b734-5238-416d-91ec-b0a8341b6110)
+
+5. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt: python -m ipykernel install --user --name=your_env_name --display-name "Python (your_env_name)". your_env_name is the name you gave your environment in step 3. This assumes you have jupyter notebooks installed. Run jupyter notebook through the prompt and change the kernel to the new environment once you open the script.
+6. Download a local version of this GitHub repository and all files. To work with code as written, you need to have the input files in same folder as script with the same sub-folders. If you download from GitHub, you will automatically download all of the needed input files EXCEPT for the flowlines. You will need to download those from Zenodo (link) and unzip within the Inputs folder. You can download the versions of datasets here on github or else from Zenodo (link). If you want more updated versions than those used to create version 1 of ResNet, you will need to download directly from the source.
+7. Run 01ResNet_FilteringandSnapping. This automates the data filtering, dataset combining, and flowline snapping algorithms using pandas and ArcGIS Pro.
+8. Run 02ResNet_DamOrdering. Output file is final updated ResNet routed. Appears in the Outputs folder as ResNet_{today's date}.csv.
+9. Run 03 !!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ## How to use the 'IsSite' feature:
 Adding a dam to the dam attributes file and marking 'IsSite' = 1 will flag that dam as a site in the dam ordering code. This then tags every dam upstream of that site with a SiteTag of that dam's ShortID (numerical identifier). This is useful to understand how many dams are upstream of a site and how those dams impact the drainage area and flow connectivity for the dam. 
