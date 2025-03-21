@@ -32,13 +32,12 @@ To permanently add a dam to ResNet or update its attributes, email ResNet@usbr.g
 4. Create a new environment with the .yml file. 'environment.yml' is the path to the .yml file:
    ![image](https://github.com/user-attachments/assets/8a96b734-5238-416d-91ec-b0a8341b6110)
 
-5. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt. your_env_name is the name you gave your environment in step 3:
+5. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt. your_env_name is the name you gave your environment in step 3:    
    ![image](https://github.com/user-attachments/assets/c1723e8c-d8ce-4370-ae99-d567490794b8)
-
-7.This assumes you have jupyter notebooks installed. Run jupyter notebook through the prompt and change the kernel to the new environment once you open the script. You should add the folder download for ResNet to the file path.
-8. Run 01ResNet_FilteringandSnapping. This automates the data filtering, dataset combining, and flowline snapping algorithms using pandas and ArcGIS Pro.
-9. Run 02ResNet_DamOrdering. Output file is final updated ResNet routed. Appears in the Outputs folder as ResNet_{today's date}.csv.
-10. Run 03 !!!!!!!!!!!!!!!!!!!!!!!!!!
+6. This assumes you have jupyter notebooks installed. Run jupyter notebook through the prompt and change the kernel to the new environment once you open the script. You should add the folder download for ResNet to the file path.
+7. Run 01ResNet_FilteringandSnapping. This automates the data filtering, dataset combining, and flowline snapping algorithms using pandas and ArcGIS Pro.
+8. Run 02ResNet_DamOrdering. Output file is final updated ResNet routed. Appears in the Outputs folder as ResNet_{today's date}.csv.
+9. Run 03 !!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ## How to use the 'IsSite' feature:
 Adding a dam to the dam attributes file and marking 'IsSite' = 1 will flag that dam as a site in the dam ordering code. This then tags every dam upstream of that site with a SiteTag of that dam's ShortID (numerical identifier). This is useful to understand how many dams are upstream of a site and how those dams impact the drainage area and flow connectivity for the dam. 
