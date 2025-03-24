@@ -26,18 +26,30 @@ To permanently add a dam to ResNet or update its attributes, email ResNet@usbr.g
 
 
 ## How to run the code:
-1. Download ArcGIS Pro. You will need an ArcGIS Pro installation on your computer to run this code.
-2. Download a local version of this GitHub repository and all files. To work with code as written, you need to have the input files in same folder as script with the same sub-folders. If you download from GitHub, you will automatically download all of the needed input files EXCEPT for the flowlines. You will need to download those from Zenodo (link; NHDFlowline_Network_NHDPlus_Countries.zip) and unzip within the Inputs folder. This zip file should have a geodatabase and a .csv in it. You can download the versions of datasets here on github or else from Zenodo (link). If you want more updated versions than those used to create version 1 of ResNet, you will need to download directly from the source listed above.
-3. Find the environment.yml file in the main download folder with the environment that already has packages needed to run this code (https://www.anaconda.com/docs/tools/working-with-conda/environments#example-version-matching-inputs).
-4. Create a new environment with the .yml file. 'environment.yml' is the path to the .yml file:
-   ![image](https://github.com/user-attachments/assets/8a96b734-5238-416d-91ec-b0a8341b6110)
+Download ArcGIS Pro. You will need an ArcGIS Pro installation on your computer to run this code. We have provided a .yml file for running this script, however if there is a mismatch between the version of ArcGIS Pro installed on your machine and the version used to create the yml environment then the environment will not activate. Below there are instructions to use the yml environment and to create your own new environment. The latter is the safer method to ensure your script will run.
 
-5. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt. your_env_name is the name you gave your environment in step 3:    
+You also need to download a local version of this GitHub repository and all files. To work with code as written, you need to have the input files in same folder as script with the same sub-folders. If you download from GitHub, you will automatically download all of the needed input files EXCEPT for the flowlines. You will need to download those from Zenodo (link; NHDFlowline_Network_NHDPlus_Countries.zip) and unzip within the Inputs folder. This zip file should have a geodatabase and a .csv in it. You can download the versions of datasets here on github or else from Zenodo (link). If you want more updated versions than those used to create version 1 of ResNet, you will need to download directly from the source listed above.
+
+### Using the .yml environment file:
+1. Find the environment.yml file in the main download folder with the environment that already has packages needed to run this code (https://www.anaconda.com/docs/tools/working-with-conda/environments#example-version-matching-inputs).
+2. Create a new environment with the .yml file. 'environment.yml' is the path to the .yml file:
+   ![image](https://github.com/user-attachments/assets/8a96b734-5238-416d-91ec-b0a8341b6110)
+3. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt. your_env_name is the name you gave your environment in step 4:    
    ![image](https://github.com/user-attachments/assets/c1723e8c-d8ce-4370-ae99-d567490794b8)
-6. This assumes you have jupyter notebooks installed. Run jupyter notebook through the prompt and change the kernel to the new environment once you open the script. You should add the folder download for ResNet to the file path.
-7. Run 01ResNet_FilteringandSnapping. This automates the data filtering, dataset combining, and flowline snapping algorithms using pandas and ArcGIS Pro.
-8. Run 02ResNet_DamOrdering. Output file is final updated ResNet routed. Appears in the Outputs folder as ResNet_{today's date}.csv.
-9. Run 03 !!!!!!!!!!!!!!!!!!!!!!!!!!
+4. This assumes you have jupyter notebooks installed. Run jupyter notebook through the prompt and change the kernel to the new environment once you open the script. You should add the folder download for ResNet to the file path.
+
+### Creating a new environment through ArcGIS Pro:
+1. Open ArcGIS Pro and go to Settings -> Package Manager. Select the cog next to Active Environment and clone your ArcGIS Pro environment (looks like a sheet of paper with a star on it): ![image](https://github.com/user-attachments/assets/0752c3bd-94f8-4b78-9a39-33b124f8433c)
+
+2. Select the new cloned environment as your active environment with the dropdown menu.
+3. Open the Python Command Prompt under your ArcGIS installation. Your new cloned environment should show as active. Mine is called ResNet. ![image](https://github.com/user-attachments/assets/a6ef1297-d269-48ec-87fe-8192b3c9dbcc)
+4. At this point you can close the Python Command Prompt and open Jupyter Notebooks from the ArcGIS dropdown menu in your Windows Explorer. The new cloned environment should be active and have all necessary packages installed. ![image](https://github.com/user-attachments/assets/fe92cec1-5d2e-493c-8df6-66035fd5fd67)
+5. Navigate to the folder where you downloaded ResNet and add it to your Python path.
+
+### Recreating ResNet:
+1. Run 01ResNet_FilteringandSnapping. This automates the data filtering, dataset combining, and flowline snapping algorithms using pandas and ArcGIS Pro.
+2. Run 02ResNet_DamOrdering. Output file is final updated ResNet routed. Appears in the Outputs folder as ResNet_{today's date}.csv.
+3. Run 03 !!!!!!!!!!!!!!!!!!!!!!!!!!
 
 ## How to use the 'IsSite' feature:
 Adding a dam to the dam attributes file and marking 'IsSite' = 1 will flag that dam as a site in the dam ordering code. This then tags every dam upstream of that site with a SiteTag of that dam's ShortID (numerical identifier). This is useful to understand how many dams are upstream of a site and how those dams impact the drainage area and flow connectivity for the dam. 
