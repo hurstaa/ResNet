@@ -32,9 +32,9 @@ You also need to download a local version of this GitHub repository and all file
 
 ### Using the .yml environment file:
 1. Find the environment.yml file in the main download folder with the environment that already has packages needed to run this code (https://www.anaconda.com/docs/tools/working-with-conda/environments#example-version-matching-inputs).
-2. Create a new environment with the .yml file. 'environment.yml' is the path to the .yml file. You need to use the Python Command Prompt available under the ArcGIS Pro installation drop down:
+2. Create a new environment with the .yml file. 'environment.yml' is the path to the .yml file. You need to use the Python Command Prompt available under the ArcGIS Pro installation drop down: \
    ![image](https://github.com/user-attachments/assets/d85eaef2-4502-439d-8e44-1f6926b8e3da)
-![image](https://github.com/user-attachments/assets/8a96b734-5238-416d-91ec-b0a8341b6110)
+   ![image](https://github.com/user-attachments/assets/8a96b734-5238-416d-91ec-b0a8341b6110)
 3. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt. your_env_name is the name you gave your environment in step 4:    
    ![image](https://github.com/user-attachments/assets/c1723e8c-d8ce-4370-ae99-d567490794b8)
 4. This assumes you have jupyter notebooks installed. Run jupyter notebook through the prompt and change the kernel to the new environment once you open the script. You should add the folder download for ResNet to the file path.
@@ -46,7 +46,8 @@ You also need to download a local version of this GitHub repository and all file
 3. Open the Python Command Prompt under your ArcGIS installation. Your new cloned environment should show as active. Mine is called ResNet. ![image](https://github.com/user-attachments/assets/a6ef1297-d269-48ec-87fe-8192b3c9dbcc)
 4. Run pip install simpledbf
 5. Map the cloned environment to a python kernel in jupyter notebook. your_env_name is the name that you gave your cloned environment: ![image](https://github.com/user-attachments/assets/c1723e8c-d8ce-4370-ae99-d567490794b8)
-6. At this point you can close the Python Command Prompt and open Jupyter Notebooks from the ArcGIS dropdown menu in your Windows Explorer. Select Kernel->Change Kernel and activate the cloned kernel. The new cloned environment should be active and have all necessary packages installed. ![image](https://github.com/user-attachments/assets/fe92cec1-5d2e-493c-8df6-66035fd5fd67)
+6. At this point you can close the Python Command Prompt and open Jupyter Notebooks from the ArcGIS dropdown menu in your Windows Explorer. Select Kernel->Change Kernel and activate the cloned kernel. The new cloned environment should be active and have all necessary packages installed. \
+   ![image](https://github.com/user-attachments/assets/fe92cec1-5d2e-493c-8df6-66035fd5fd67)
 7. Navigate to the folder where you downloaded ResNet and add it to your Python path.
 
 ### Recreating ResNet:
