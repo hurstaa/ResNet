@@ -1,0 +1,1 @@
+Intermediate outputs will appear in this folder. The final updated version of ResNet will be named ResNet_YYYYMMDD where YYYYMMDD is today's date in the format YearMonthDay.
