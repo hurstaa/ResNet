@@ -35,7 +35,7 @@ You also need to download a local version of this GitHub repository and all file
 2. Create a new environment with the .yml file. 'environment.yml' is the path to the .yml file. You need to use the Python Command Prompt available under the ArcGIS Pro installation drop down: \
    ![image](https://github.com/user-attachments/assets/d85eaef2-4502-439d-8e44-1f6926b8e3da)
    ![image](https://github.com/user-attachments/assets/8a96b734-5238-416d-91ec-b0a8341b6110)
-3. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt. your_env_name is the name you gave your environment in step 4:    
+3. Map the .yml environment to where you run jupyter notebooks using this script in Anaconda Prompt. your_env_name is the name you gave your environment in step 2:    
    ![image](https://github.com/user-attachments/assets/c1723e8c-d8ce-4370-ae99-d567490794b8)
 4. This assumes you have jupyter notebooks installed. Run jupyter notebook through the prompt and change the kernel to the new environment once you open the script. You should add the folder download for ResNet to the file path.
 
