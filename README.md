@@ -1,6 +1,9 @@
 # Continental United States Storage Reservoir Network (ResNet)
 This repository contains the Jupyter Notebooks and input files necessary to recreate the ResNet database of routed US dams. The user needs to download the most recent versions of all of the databases, as well as the input files and most recent version of ResNet from this repository or Zenodo (DOI: 10.5281/zenodo.14057031). First run 01ResNet_FilteringandSnapping followed by 02ResNet_DamOrdering. If the user wants to calculate as-built sediment contributing drainage area, they should run 03ResNet_SedimentContributingDrainageArea. The output will be a csv with an updated version of ResNet. If you would like any updated dam locations permanently added to future versions of the dataset, please email resnet.dataset@gmail.com.
 
+## Updates 3/4/2026
+Updated using NID from 3/4/2026 and updated attribute file. For the version from Hurst et al., 2025, see the v1.0 release
+
 For more background information on why certain choices were made in our filtering and snapping algorithms, please refer to our journal article.
 Journal article: 
 
