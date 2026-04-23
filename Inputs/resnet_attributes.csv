@@ -1,4 +1,5 @@
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 NID,ShortID,Reservoir,Lat,Long,Moved,Deleted,Year_Compl_user,YrRemoved,DataSource,MaxStor_m3,IsSite,IsUSBR,IsUSACE,IsRiverMth,delta,IsLock
 AL00007,285109,,33.4592323,-86.4561747,1,0,,,,,0,0,0,0,0,
 AL00032,285129,,31.1593164,-87.7088609,1,0,,,,,0,0,0,0,0,
@@ -4756,6 +4757,8 @@ WY02933,,,41.74909745,-108.7888045,1,0,,,USFS QC,,0,0,0,0,0,0
 WY12080 ,,,42.72524753,-110.9109827,1,0,,,USFS QC,,0,0,0,0,0,0
 MT01562,,,46.4745485,-112.1848258,1,0,,,USFS QC,,0,0,0,0,0,0
 =======
+=======
+>>>>>>> Stashed changes
 NID,ShortID,Reservoir,Lat,Long,Moved,Deleted,Year_Compl_user,YrRemoved,DataSource,MaxStor_m3,IsSite,IsUSBR,IsUSACE,IsRiverMth,delta,IsLock
 NC00478,332613.0,,,,0.0,1,,,,,,,,,,
 WA01891,369252.0,,,,0.0,1,,,,,,,,,,
@@ -9515,4 +9518,7 @@ WY02932,,,42.7417,-110.8841,1.0,0,,,USFS QC,,0.0,0.0,0.0,0.0,0.0,0.0
 WY02933,,,41.74909745,-108.7888045,1.0,0,,,USFS QC,,0.0,0.0,0.0,0.0,0.0,0.0
 WY12080 ,,,42.72524753,-110.9109827,1.0,0,,,USFS QC,,0.0,0.0,0.0,0.0,0.0,0.0
 MT01562,,,46.4745485,-112.1848258,1.0,0,,,USFS QC,,0.0,0.0,0.0,0.0,0.0,0.0
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
